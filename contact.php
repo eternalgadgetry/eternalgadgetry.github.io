@@ -32,7 +32,7 @@ if(isset($_POST['email']))
 
 		// the email will be sent here
 		// make sure to change this to be your e-mail
-		$to      = "markos.skoulatos@gmail.com";
+		$to      = "t.skoulatos@gmail.com";
 
 		// the mail message ( add any additional information if you want )
 		$msg     = "From : $name <br />E-Mail : $email <br />Subject : $subject <br /><br />" . "Message : <br />$message";
