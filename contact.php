@@ -32,9 +32,7 @@ if(isset($_POST['email']))
 
 		// the email will be sent here
 		// make sure to change this to be your e-mail
-		$to      = "skoulatos@gmail.com";
-		$too      = "eternalgadgetry@gmail.com";
-		$tooo      = "info@eternalgadgetry.com";
+		$to      = "markos.skoulatos@gmail.com";
 
 		// the mail message ( add any additional information if you want )
 		$msg     = "From : $name <br />E-Mail : $email <br />Subject : $subject <br /><br />" . "Message : <br />$message";
@@ -50,8 +48,6 @@ if(isset($_POST['email']))
 		);
 
 		mail($to, $subject, $msg, implode("\n", $headers));
-		mail($too, $subject, $msg, implode("\n", $headers));
-		mail($tooo, $subject, $msg, implode("\n", $headers));
 	}
 }
 
