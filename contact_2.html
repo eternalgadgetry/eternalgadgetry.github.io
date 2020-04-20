@@ -328,7 +328,7 @@
 					$.ajax({
 						url:'./contact.php', //===PHP file name====
 						data:$(this).serialize(),
-						type:'PUT',
+						type:'POST',
 						success:function(data){
 							if (data) {
 							//if (!$.trim(data)){
