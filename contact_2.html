@@ -352,11 +352,11 @@
 								$("form#submit_message")[0].reset();
 							}
 						},
-						error:function(){
+						error:function(data){
 							swal({
 								//Error Message == Leave as is
 								title: "Oops...!",
-								text: "Please try again",
+								text: data,
 								type: "error",
 								allowOutsideClick: "true",
 							});
