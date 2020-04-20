@@ -326,7 +326,7 @@
 			$(document).ready(function(){
 				$('#submit_message').on('submit',function(e) {  //Don't foget to change the id form ("submit_message")
 					$.ajax({
-						url:'contact.php', //===PHP file name====
+						url:'./contact.php', //===PHP file name====
 						data:$(this).serialize(),
 						success:function(data){
 							if (data) {
