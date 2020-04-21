@@ -352,7 +352,15 @@
 								$("form#submit_message")[0].reset();
 							}
 						},
-
+						error:function(){
+							swal({
+								//Error Message == Leave as is
+								title: "Oops...!",
+								text: "Please try again",
+								type: "error",
+								allowOutsideClick: "true",
+							});
+						}
 					});
 					e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
 				});
